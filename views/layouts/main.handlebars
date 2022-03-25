@@ -18,10 +18,11 @@
       <li class="li-inline nav-item"><a href="/">Home</a></li>
       <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
       <!-- Conditionally render login link with UNLESS-->
-      {{#unless logged_in}}
+      {{#if loggedIn}}
+      <li class="li-inline nav-item"><a href="/logout">Logout</a></li>
+      {{else}}
       <li class="li-inline nav-item"><a href="/login">Login</a></li>
-      {{/unless}}
-      <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
+      {{/if}}
     </ul>
   </nav>
 
@@ -36,9 +37,9 @@
   <footer class="flex-row justify-center">
     &copy; The Tech Blog
   </footer>
+  {{#if loggedIn}}
+<script src="/js/logout.js"></script>
+{{/if}}
 </body>
 
 </html>
-{{#if logged_in}}
-<script src="/js/logout.js"></script>
-{{/if}}
