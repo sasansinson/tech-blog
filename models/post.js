@@ -11,19 +11,19 @@ Post.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: { 
+    postTitle: { 
         type: DataTypes.STRING,
         allowNull: false,
     },
-    post_content: { 
+    postContent: { 
         type: DataTypes.STRING,
         allowNull: false,
     },
-    createdAt: {
+    dateCreated: {
         type: DataTypes.DATE,
         allowNull: false,
     },
-    user_id: {
+    userId: {
        type: DataTypes.INTEGER,
        references: {
        model: 'user',
