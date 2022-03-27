@@ -21,7 +21,7 @@ This is a CMS-style blog site similar to a Wordpress site, where developers can 
 ## Usage
 ![screen Shot](./public/images/screenshot.png)
 
-Deployed application link: [teck Blog Heroku](https://tech-blog-sinson.herokuapp.com/) 
+Deployed application link: [teck Blog Heroku](https://tech-bloggers-place.herokuapp.com/) 
 
 Github Repo: [tech-blog github repo](https://github.com/sasansinson/tech-blog)  
 
